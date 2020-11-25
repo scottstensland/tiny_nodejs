@@ -6,13 +6,35 @@ https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 docker build -t  scottstensland/tiny_nodejs  .
 
 
+docker build -t  eventhorizon/tiny_nodejs  .
+
+
 
 docker run -p 49160:8080 -d <your username>/node-web-app
 
 docker run -p 49160:8080 -d scottstensland/tiny_nodejs 
+docker run -p 8080:8080 -d scottstensland/tiny_nodejs 
+
+docker run -p 49160:8080 -d eventhorizon/tiny_nodejs 
+docker run -p 8080:8080 -d  eventhorizon/tiny_nodejs
 
 
 
-http://localhost:49160/
+     http://localhost:49160/
+
+curl http://localhost:49160/
+
+
+     http://localhost:8080/
+
+curl http://localhost:8080/
+
+
+
+
+https://hub.docker.com/repository/docker/eventhorizon/tiny_nodejs/general
+
+
+https://hub.docker.com/repositories
 
 
